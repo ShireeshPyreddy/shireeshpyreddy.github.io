@@ -3,73 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Portfolio | Your Name</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Add any CSS Framework like Bootstrap or Tailwind (optional) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <h1 class="logo"><a href="#">Your Name</a></h1>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Hi, I'm <span>Your Name</span></h2>
-      <p>AI Engineer | NLP Specialist | Innovator</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Tabs Navigation -->
+    <div class="tabs">
+      <button class="tab-link active" data-tab="home">Home</button>
+      <button class="tab-link" data-tab="about">About</button>
+      <button class="tab-link" data-tab="projects">Projects</button>
+      <button class="tab-link" data-tab="skills">Skills</button>
+      <button class="tab-link" data-tab="contact">Contact</button>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
+    <!-- Tabs Content -->
+    <div class="tab-content active" id="home">
+      <h1>Your Name</h1>
+      <p>AI Engineer | NLP Specialist | Innovator</p>
       <p>
-        I am a passionate AI Engineer with expertise in Generative AI, NLP, and Machine Learning. With over 6 years of experience, I have built solutions that drive efficiency across industries such as healthcare, multimedia, and HR.
+        Welcome to my portfolio! I am a passionate AI Engineer with expertise in Generative AI, NLP, and Machine Learning. I love solving complex problems and delivering innovative solutions across domains.
       </p>
     </div>
-  </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Healthcare AI Pipeline</h3>
-        <p>
-          Developed a pipeline using LangChain and Azure GPT-4 API to optimize medical inquiry analysis, achieving a 34% accuracy improvement.
-        </p>
-        <a href="https://github.com/yourrepo/healthcare-pipeline" class="btn" target="_blank">View on GitHub</a>
-        <a href="https://your-demo-link.com" class="btn" target="_blank">Live Demo</a>
-      </div>
-      <div class="project-card">
-        <h3>Knowledge Graph</h3>
-        <p>
-          Built an ontology graph using Retrieval-Augmented Generation (RAG), achieving 85% accuracy in mapping relationships across domains.
-        </p>
-        <a href="https://github.com/yourrepo/knowledge-graph" class="btn" target="_blank">View on GitHub</a>
-      </div>
+    <div class="tab-content" id="about">
+      <h2>About Me</h2>
+      <p>
+        I have over 6 years of experience in AI and NLP, working on projects that improve efficiency and drive innovation. My work spans industries like healthcare, HR, and multimedia.
+      </p>
     </div>
-  </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <div class="container">
+    <div class="tab-content" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Healthcare AI Pipeline:</strong> Developed a pipeline using LangChain and Azure GPT-4 API to optimize medical inquiry analysis, achieving a 34% accuracy improvement.
+        </li>
+        <li>
+          <strong>Knowledge Graph:</strong> Built an ontology graph using Retrieval-Augmented Generation (RAG), achieving 85% accuracy in mapping relationships.
+        </li>
+      </ul>
+    </div>
+
+    <div class="tab-content" id="skills">
       <h2>Skills</h2>
       <ul>
         <li>Python, TensorFlow, PyTorch</li>
@@ -77,31 +57,18 @@
         <li>Cloud Platforms: AWS, GCP</li>
       </ul>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
+    <div class="tab-content" id="contact">
       <h2>Contact Me</h2>
-      <p>Feel free to reach out to discuss opportunities or collaborations!</p>
       <form action="https://formspree.io/f/yourform" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="_replyto" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
+        <button type="submit">Send Message</button>
       </form>
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-      <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
