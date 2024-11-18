@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #f4f4f9;
   color: #333;
 }
 
@@ -13,10 +13,11 @@ body {
 }
 
 h1, h2 {
-  color: #0073e6;
+  color: #0056b3;
+  font-weight: 700;
 }
 
-p {
+p, ul {
   line-height: 1.6;
 }
 
@@ -25,7 +26,7 @@ p {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
-  background-color: #0073e6;
+  background-color: #0056b3;
   padding: 10px 0;
 }
 
@@ -41,7 +42,7 @@ p {
 }
 
 .tab-link.active, .tab-link:hover {
-  background-color: #005bb5;
+  background-color: #003d82;
 }
 
 /* Tabs Content */
@@ -57,7 +58,15 @@ p {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Form */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 15px;
+}
+
 form input, form textarea {
   width: 100%;
   padding: 10px;
@@ -67,7 +76,7 @@ form input, form textarea {
 }
 
 form button {
-  background-color: #0073e6;
+  background-color: #0056b3;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -77,5 +86,5 @@ form button {
 }
 
 form button:hover {
-  background-color: #005bb5;
+  background-color: #003d82;
 }
